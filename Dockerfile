@@ -8,6 +8,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 RUN composer install
 EXPOSE 3000
-CMD ["/var/www/html/run.sh"]
+ENTRYPOINT ["/var/www/html/run.sh"]
 
 

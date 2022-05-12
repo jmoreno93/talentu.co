@@ -13,7 +13,6 @@ services:
     environment:
       - XDEBUG_CONFIG='remote_host=hostenv'
       - VIRTUAL_HOST=laravel.docker
-        #MySQL Service
   db:
     image: mysql:8.0.1
     container_name: sl-db
