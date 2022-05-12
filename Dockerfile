@@ -8,6 +8,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 --install-dir=/usr/bin --filename=composer && chmod +x /usr/bin/composer 
 RUN composer install
 EXPOSE 3000
-ENTRYPOINT ["/var/www/html/run.sh"]
+CMD php artisan migrate:fresh --seed && php artisan serve --host=0.0.0.0 --port=3000
 
 
