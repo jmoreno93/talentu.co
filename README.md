@@ -53,11 +53,7 @@ _Para este paso utilizaremos postman que debimos previamente instalar en la pc p
  https://github.com/jmoreno93/talentu.co/blob/main/postman/talentu.co.postman_collection.json
 ```
 
-_Usted necesitará cargar las variables de entorno el cual puede descargar desde este link:_
-
-```
- https://go.postman.co/workspace/My-Workspace~f9b66d3d-3f5c-40a7-8042-87facc29bc45/environment/7359193-eb1fbea1-fd11-433f-b533-dae2ed3cdae7
-```
+_Una vez dentro de postman debe ir a la sección *Enviroment* y dar al icono de *+* ya que se estará almacenando el token en una variable de entorno para hacer más fácil la verificación_
 
 ### Verifique los endpoint en postman 🔩
 
