@@ -36,10 +36,10 @@ docker build -t moisesapi .
 _Antes de continuar asegurese que el puerto 8000 esta disponible porque la aplicación tomará este puerto en caso no este disponible no podrá levantar el contenedor_
 
 ```
-docker-compose up
+docker-compose up -d
 ```
 
-_Con ello tendremos la aplicación ejecutandose en el puerto 8000_
+_Esperamos 1 minuto y con ello tendremos la aplicación ejecutandose en el puerto 8000_
 
 ## Ejecutando testing ⚙️
 
