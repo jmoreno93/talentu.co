@@ -1,64 +1,67 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Talentu.co Test
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+_El proyecto es un exámen para la evaluación de conocimientos_
 
-## About Laravel
+### Pre-requisitos 📋
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+_Principalmente usted tener estos programas instalados en tu pc ya sea en windows, linux o mac esta disponible para estás tres plataformas_
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+```
+1. Git: Herramiuenta que usaremos para descargar del repositorio en la nube
+2. Docker: Para levantar los contenedores con la aplicación y base de datos
+3. Postman: Para poder revisar los endpoint
+```
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Instalación 🔧
 
-## Learning Laravel
+_Debes seguir paso a paso las indicaciones para poder levantar el proyecto_
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+_Abra el terminal y ejecute esto_
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```
+git clone https://github.com/jmoreno93/talentu.co.git
+```
+_Cuando termine el proceso de descarga entramos a la carpeta_
 
-## Laravel Sponsors
+```
+cd talentu.co
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+_Para este paso el docker debe estar corriendo en la pc, luego llamamos a este comando_
 
-### Premium Partners
+```
+docker build -t moisesapi .
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+_Antes de continuar asegurese que el puerto 8000 esta disponible porque la aplicación tomará este puerto en caso no este disponible no podrá levantar el contenedor_
 
-## Contributing
+```
+docker-compose up
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+_Con ello tendremos la aplicación ejecutandose en el puerto 8000_
 
-## Code of Conduct
+## Ejecutando testing ⚙️
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+_Podemos ejecutar mediante github actions el testing de la aplicación para asegurarnos que todo esta funcionando_
 
-## Security Vulnerabilities
+## Ejecutando endpoints ⚙️
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+_Para este paso utilizaremos postman que debimos previamente instalar en la pc para ello utilice la colección que esta en el proyecto descargado o lo puede volver a descargar desde aquí_
 
-## License
+```
+ https://github.com/jmoreno93/talentu.co/blob/main/postman/talentu.co.postman_collection.json
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+_Usted necesitará cargar las variables de entorno el cual puede descargar desde este link:_
+
+```
+ https://go.postman.co/workspace/My-Workspace~f9b66d3d-3f5c-40a7-8042-87facc29bc45/environment/7359193-eb1fbea1-fd11-433f-b533-dae2ed3cdae7
+```
+
+### Verifique los endpoint en postman 🔩
+
+_Como podrá visualizar en el arbol de carpetas de la colección de postman se organiza por carpetas de acuerdo a las preguntas dadas en el examen_
+
+---
+Gracias por la oportunidad
